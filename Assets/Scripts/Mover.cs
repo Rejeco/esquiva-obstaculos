@@ -15,16 +15,28 @@ public class Mover : MonoBehaviour
     // Facilita la normalizacion de velocidad para 
     // diferentes equipos de computo
 
-    [SerializeField] float velocidadMovimiento = 10.0f;    
+    [SerializeField] float velocidadMovimiento = 10.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        imprimeInstrucciones();
+        ImprimeInstrucciones();
     }
 
     // Update is called once per frame
     void Update()
+    {
+        MoverJugador();
+    }
+
+    void ImprimeInstrucciones()
+    {
+        Debug.Log("Bienvenido al juego!");
+        Debug.Log("Movimiento: Te mueves con AWSD o con las flechas");
+        Debug.Log("Condiciones: Si tocas los obstaculos pierdes!");
+    }
+
+    void MoverJugador()
     {
         // Input.GetAxis es legacy
         // Permite manipular los valores de los ejes con el
@@ -34,13 +46,6 @@ public class Mover : MonoBehaviour
         float zValor = Input.GetAxis("Vertical") * Time.deltaTime * velocidadMovimiento;
 
         transform.Translate(xValor, yValor, zValor);
-    }
-
-    void imprimeInstrucciones()
-    {
-        Debug.Log("Bienvenido al juego!");
-        Debug.Log("Movimiento: Te mueves con AWSD o con las flechas");
-        Debug.Log("Condiciones: Si tocas los obstaculos pierdes!");
     }
 
 }
