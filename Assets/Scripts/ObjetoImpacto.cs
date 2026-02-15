@@ -13,6 +13,6 @@ public class ObjetoImpacto : MonoBehaviour
         // cambiarán a color magenta
         GetComponent<MeshRenderer>().material.color = Color.magenta;
         
-        Debug.Log("Algo me golpeó!");
+        // Debug.Log("Algo me golpeó!");
     }
 }
