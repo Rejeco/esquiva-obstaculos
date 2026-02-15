@@ -15,12 +15,12 @@ public class Mover : MonoBehaviour
     // Facilita la normalizacion de velocidad para 
     // diferentes equipos de computo
 
-    [SerializeField] float velocidadMovimiento = 2.0f;    
+    [SerializeField] float velocidadMovimiento = 10.0f;    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        imprimeInstrucciones();
     }
 
     // Update is called once per frame
@@ -34,15 +34,13 @@ public class Mover : MonoBehaviour
         float zValor = Input.GetAxis("Vertical") * Time.deltaTime * velocidadMovimiento;
 
         transform.Translate(xValor, yValor, zValor);
-        // yValor = limiteAltura(yValor);
     }
 
-    float limiteAltura(float altura)
+    void imprimeInstrucciones()
     {
-        if (altura > 2.0f)
-        {
-            altura = -0.01f;
-        }
-        return altura;
+        Debug.Log("Bienvenido al juego!");
+        Debug.Log("Movimiento: Te mueves con AWSD o con las flechas");
+        Debug.Log("Condiciones: Si tocas los obstaculos pierdes!");
     }
+
 }
