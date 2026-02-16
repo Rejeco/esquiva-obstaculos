@@ -31,7 +31,9 @@ public class VuelaEnJugador : MonoBehaviour
 
     // Destruye el gameObject, es decir, el objeto de juego
     // que esta enlazado al Script.
-    // En este caso destruye los proyectiles
+    // En este caso destruye los proyectiles.
+    // Destroy permite liberar recursos para hacer más eficiente
+    // el juego
     void DestruirCuandoLlegue()
     {
         if (transform.position == posicionJugador)
