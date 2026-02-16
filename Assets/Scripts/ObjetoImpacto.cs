@@ -11,7 +11,11 @@ public class ObjetoImpacto : MonoBehaviour
         // modificar sus propiedades.
         // Entonces cuando haya colision las paredes u obstaculos
         // cambiarán a color magenta
-        GetComponent<MeshRenderer>().material.color = Color.magenta;
+
+        if (collision.gameObject.tag == "Player")
+        {
+            GetComponent<MeshRenderer>().material.color = Color.magenta;
+        }
         
         // Debug.Log("Algo me golpeó!");
     }
