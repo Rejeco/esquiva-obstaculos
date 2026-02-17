@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TriggerProyectil : MonoBehaviour
@@ -23,11 +24,24 @@ public class TriggerProyectil : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            proyectil.SetActive(true);
+            /* proyectil.SetActive(true);
             proyectil2.SetActive(true);
             proyectil3.SetActive(true);
             proyectil4.SetActive(true);
-            proyectil5.SetActive(true);
+            proyectil5.SetActive(true);*/
+            SetActive(proyectil);
+            SetActive(proyectil2);
+            SetActive(proyectil3);
+            SetActive(proyectil4);
+            SetActive(proyectil5);
         }    
+    }
+
+    private void SetActive(GameObject gameObject)
+    {
+        if (!gameObject.IsUnityNull())
+        {
+            gameObject.SetActive(true);
+        }
     }
 }
