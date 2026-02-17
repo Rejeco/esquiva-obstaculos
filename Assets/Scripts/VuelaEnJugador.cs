@@ -11,9 +11,22 @@ public class VuelaEnJugador : MonoBehaviour
     [SerializeField] Transform jugador;
     Vector3 posicionJugador;
 
-    void Start()
+    // Con el metodo Awake arranca antes del
+    // metodo Start, permitiendo a los objetos
+    // del juego proyectiles seguir correctamente
+    // la posición del jugador porque
+    // llama al objeto aunque este inactivo
+    // y Start no lo hace entonces cuando el objeto
+    // es activo por el TriggerProyectil.cs
+    // Se actualiza la posición del jugador correctamente 
+    // y los proyectiles siguen la posicion del jugador
+    void Awake()
     {
         gameObject.SetActive(false);
+    }
+
+    void Start()
+    {
         posicionJugador = jugador.transform.position;
     }
 
