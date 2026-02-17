@@ -13,6 +13,7 @@ public class VuelaEnJugador : MonoBehaviour
 
     void Start()
     {
+        gameObject.SetActive(false);
         posicionJugador = jugador.transform.position;
     }
 
