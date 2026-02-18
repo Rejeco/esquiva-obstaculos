@@ -787,6 +787,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Proyectil (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8907278383397874120, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: jugador
       value: 
@@ -982,6 +986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Proyectil (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8907278383397874120, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: jugador
       value: 
@@ -1052,6 +1060,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Proyectil (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8907278383397874120, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: jugador
       value: 
@@ -1121,6 +1133,10 @@ PrefabInstance:
     - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: m_Name
       value: Proyectil (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8907278383397874120, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: jugador
@@ -1843,6 +1859,10 @@ PrefabInstance:
     - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: m_Name
       value: Proyectil
+      objectReference: {fileID: 0}
+    - target: {fileID: 6394120825371640239, guid: 7ca0026bac183264187387f33296e46e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8907278383397874120, guid: 7ca0026bac183264187387f33296e46e, type: 3}
       propertyPath: jugador
