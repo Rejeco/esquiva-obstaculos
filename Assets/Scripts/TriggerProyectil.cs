@@ -24,19 +24,28 @@ public class TriggerProyectil : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            /* proyectil.SetActive(true);
+            proyectil.SetActive(true);
             proyectil2.SetActive(true);
             proyectil3.SetActive(true);
             proyectil4.SetActive(true);
-            proyectil5.SetActive(true);*/
+            proyectil5.SetActive(true);
+            Destroy(gameObject); // Destruye el objeto trigger despues de hacer su accion
+
+            // Este código verifica que los
+            // proyectiles existan para
+            // activarlos y así evitar un
+            // error con el trigger cuando lo busca.
+            /*
             SetActive(proyectil);
             SetActive(proyectil2);
             SetActive(proyectil3);
             SetActive(proyectil4);
             SetActive(proyectil5);
+            */
         }    
     }
 
+    // Este metodo obtiene el proyectil y verifica que exista
     private void SetActive(GameObject gameObject)
     {
         if (!gameObject.IsUnityNull())

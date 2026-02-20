@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 254017601201184081}
   - component: {fileID: 4646072666027338635}
   - component: {fileID: 8907278383397874120}
+  - component: {fileID: 4467352610021142119}
   m_Layer: 0
   m_Name: Proyectil
   m_TagString: Untagged
@@ -127,3 +128,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VuelaEnJugador
   velocidad: 12
   jugador: {fileID: 0}
+--- !u!114 &4467352610021142119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6394120825371640239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ae92a167ba2224ebb13a59df2b1069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoImpacto
